@@ -3,10 +3,20 @@
   "name": "Hoodvisor",
   "version": "1.0",
   "description": "Your Neighborhood Safety Guide.",
+  "icons": {
+    "16": "icons/1616.png",
+    "48": "icons/4848.png",
+    "128": "icons/128128.png"
+  },
   "permissions": ["activeTab", "tabs", "https://www.zillow.com/*"],
   "web_accessible_resources": ["zipcode_data.json"],
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/1616.png",
+      "48": "icons/4848.png",
+      "128": "icons/128128.png"
+    }
   },
   "content_security_policy": "script-src 'self' https://d3js.org https://cdnjs.cloudflare.com; object-src 'self'"
 }

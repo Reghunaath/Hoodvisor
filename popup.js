@@ -272,9 +272,9 @@ function createGauge(containerId, value = 75) {
   // Clear previous gauge if any
   d3.select("#" + containerId).html("");
 
-  // Reduced dimensions
-  const width = 250; // Reduced from 300
-  const height = 140; // Reduced from 200
+  // Increased dimensions
+  const width = 300; // Increased from 250
+  const height = 170; // Increased from 140
   const radius = Math.min(width, height) / 2.2;
 
   // Create SVG with new dimensions
@@ -335,7 +335,7 @@ function createGauge(containerId, value = 75) {
       .attr("dy", "0.35em")
       .style("font-size", "12px")
       .style("font-weight", "bold")
-      .style("fill", "#000")
+      .style("fill", "#ffffff")
       .text(section.name);
   });
 

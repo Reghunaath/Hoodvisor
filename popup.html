@@ -13,6 +13,8 @@
         padding: 16px;
         margin: 0;
         background-color: #1a1a1a;
+        max-height: 600px;
+        overflow-y: auto;
       }
       .gauge-container {
         display: flex;
@@ -32,7 +34,7 @@
       .title {
         font-size: 26px;
         font-weight: 700;
-        color: #562b8c;
+        color: #c19bef;
         margin: 0;
         letter-spacing: 1.5px;
       }
@@ -131,6 +133,47 @@
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
+      /* Custom Scrollbar Styles */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #2d2d2d;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #562b8c;
+        border-radius: 4px;
+        transition: background 0.2s ease;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6b35ab;
+      }
+
+      .link-container {
+        text-align: center;
+        padding: 16px;
+        margin-top: 8px;
+        background: #2d2d2d;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .link-container a {
+        color: #c19bef;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+      }
+
+      .link-container a:hover {
+        color: #d4b8f7;
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -148,6 +191,16 @@
       <div class="gauge-title">Street Safety Score</div>
       <div id="gauge2"></div>
     </div>
+
+    <div class="link-container">
+      <a
+        href="https://hoodvisor-model-dgkicwikd9jf4mahnbuljy.streamlit.app/"
+        target="_blank"
+      >
+        Visit Hoodvisor Model
+      </a>
+    </div>
+
     <script src="popup.js"></script>
   </body>
 </html>
