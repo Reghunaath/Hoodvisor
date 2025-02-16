@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Zillow Home H1 Popup",
+  "version": "1.0",
+  "description": "Displays the H1 text content from Zillow home details pages in a popup.",
+  "permissions": ["activeTab", "tabs", "https://www.zillow.com/*"],
+  "web_accessible_resources": ["zipcode_data.json"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' https://d3js.org https://cdnjs.cloudflare.com; object-src 'self'"
+}
